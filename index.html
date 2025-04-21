@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عيد ميلاد أمي</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .greeting {
+      font-size: 2.5rem;
+      color: #ff69b4;
+      animation: fade 2s ease-in-out infinite, scale 2s ease-in-out infinite;
+    }
+
+    .birthday-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 20px;
+      animation: rotate 5s linear infinite, move 3s ease-in-out infinite;
+    }
+
+    .message {
+      font-size: 1.2rem;
+      color: #333;
+      animation: skew 3s ease-in-out infinite;
+    }
+
+    /* Keyframes */
+    @keyframes fade {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes scale {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes move {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(300px); }
+    }
+
+    @keyframes skew {
+      0% { transform: skewX(0deg); }
+      100% { transform: skewX(10deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="greeting">عيد ميلاد سعيد يا أمي! 💖</h1>
+    <img src="ami.jpg" alt="صورة أمي" class="birthday-image">
+    <p class="message">أنتِ نبع الحب والحنان، أتمنى لكِ سنة مليئة بالسعادة والفرح! 🌸</p>
+  </div>
+</body>
+</html>
